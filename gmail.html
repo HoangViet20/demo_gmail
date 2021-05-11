@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <STyle>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+        @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'PT Serif', 'Helvetica', 'Arial';
+        }
+        .top_bar { 
+            width: full; 
+            margin: 0 auto; 
+            padding: 10px 0px; 
+            background: white; 
+            overflow: auto;
+        }
+        h1{
+            float: left; 
+            font-size: 20pt; 
+            margin: 3px 0 0 -4px;
+            color: rgb(165, 165, 165);
+            cursor: pointer;
+        }
+        .top_logo{
+            float: left;
+            max-width: 40px;
+            padding: 0 8px;
+            cursor: pointer;
+        }
+        #navbar { 
+            list-style-type: none;
+            margin: 5px 0 0 0; 
+            padding: 0; 
+            float: right; 
+            font-size: 16pt;
+            font-family: 'Helvetica';
+        }
+        #navbar li.top  { 
+            display: inline; 
+        }
+        #navbar li.top:nth-child(1) a{
+            font-size: 10pt;
+            text-decoration: none;
+            color: rgb(236, 97, 87);
+            padding: 0 30px 0 10px; 
+        }   
+        #navbar li.top:nth-child(2) a { 
+            font-size: 10pt;
+            text-decoration: none;
+            color: black;
+            padding: 0 40px 0 40px; 
+        }
+        #navbar li.top:nth-child(3) a { 
+            font-size: 10pt;
+            text-decoration: none;
+            color: white    ;
+            background: rgb(236, 97, 87);
+            border-right: 0px;
+            padding: 60px 30px 22.9px 40px; 
+        }
+        #navbar li.top:nth-child(2) a:hover { 
+            color: #EB6361;
+        }
+        #main_photo{
+            object-fit: cover;
+            width: 100%;
+            height: 350px
+        }
+        .mid_bar { 
+            width: full;
+            padding: 10px 0px; 
+            background: rgb(236, 97, 87); 
+            overflow: auto;
+        }   
+        .begin{
+            float: left;
+            padding: 20px 100px;
+            margin:18px  0 0 8%;
+            border-width:2px;
+            border-style:solid;
+            border-color: white;
+            color: white;
+            cursor: pointer;
+            font-family: 'Helvetica';
+            
+        }
+        .mid_text { 
+            width: 500px; 
+            margin: 0 auto; 
+            padding: 15px 30% 15px 10px; 
+            float: right; 
+            overflow: auto;
+        }
+        h1.mid { 
+            font-weight: normal; 
+            font-size: 20pt; 
+            margin-top: 0px;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            font-size: 25pt;
+        }
+        h4{
+            width: 400px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 10pt;
+        }
+        span{
+            color: blue;
+            cursor: pointer;
+        }
+        .four_image{
+            width: 65%; 
+            margin: 0 auto; 
+            background: white; 
+            overflow: auto;
+            padding: 30px 0 50px 0;
+        }
+        .image-outer { 
+            box-sizing: border-box;
+            border-style:outset;
+            float: left; 
+            width: 22.55999%; 
+            padding: 0 0 20px 0; 
+            margin: 0 10px; 
+            text-align: center;
+        }
+        .sub_image { 
+            margin: 0 auto;
+            border: 2px solid #D6D6D6; 
+            box-sizing: border-box;
+            border-style:none;
+            cursor: pointer;
+        }
+        .in_img{
+            width: 100%;
+            height: 75%
+        }
+        h5 { 
+            margin: 12px 4px; 
+            font-size: 14pt;
+            cursor: pointer;
+        }
+        p {
+            margin: 0 20px 0 20px;
+            font-size: 10pt;
+            text-align: left;
+            font-family: 'PT Sans'
+        }
+        #footer { 
+            width: 100%; 
+            background: #F1F1F1; /* light gray */ 
+            border-top: 1px solid #D4D4D4; /* 
+            dark gray "topline" */ 
+            height: 100px;
+        }
+
+        h1, h2, h4, h5, h6 { 
+            font-family: 'PT Sans', 'Helvetica', 'Arial';
+        }
+        #footer_text { 
+            list-style-type: none;
+            margin: 29px 0 0 60px; 
+            padding: 0 0 0 0; 
+            float: left; 
+            font-size: 8pt;
+        }
+        #footer_text  li.foot { 
+            display: inline; 
+        }
+        #footer_text li.foot a:link, #footer_text li.foot a:visited, #footer_text li.foot a:active { 
+            text-decoration: none;  
+            color: #000000; 
+            padding: 0 16px 0 10px; 
+            margin: 0; 
+        }
+        #footer_text li.foot  a:hover { 
+            color: #EB6361;
+        }
+        #footer_low { 
+            width: 100%; 
+            background: #F1F1F1; /* light gray */ 
+            border-top: 1px solid #D4D4D4; /* 
+            dark gray "topline" */ 
+            height: 70px;
+        }
+        
+        #footer_2_text { 
+            list-style-type: none;
+            margin: 20px 0 0px 75px; 
+            padding: 0 0 0 0; 
+            float: left; 
+            font-size: 9pt;
+        }
+        #footer_2_text  li.foot2 { 
+            display: inline; 
+        }
+        #footer_2_text li.foot2 a:link, #footer_2_text li.foot2 a:visited, #footer_2_text li.foot2 a:active { 
+            text-decoration: none;  
+            color: blue; 
+            font-weight: bold;
+            padding: 0 8px 0 10px; 
+            margin: 0;
+            font-size: 7pt;
+        }
+        #choose{
+            float: right;
+            margin: 20px 10% 0 0;
+            width: 250px;
+            padding: 5px 5px;
+        }
+    </STyle>
+</head>
+<body>
+    <div class="top_bar">
+        <div id="logo-container"> 
+            <img id="logo" class="top_logo" src="C:\Users\hoang\Desktop\HTML\gmail_img\fabicon.ico" /><h1>Gmail</h1>
+        </div>
+        <ul id="navbar"> 
+            <li class="top"><a href="">HOME</a></li> 
+            <li class="top"><a href="">ĐĂNG NHẬP</a></li> 
+            <li class="top"><a href="">BẮT ĐẦU</a></li>
+        </ul>
+    </div>
+    <div>
+        <img id="main_photo" src="C:\Users\hoang\Desktop\HTML\gmail_img\for-work-hero.jpg" />
+    </div>
+
+    <div class="mid_bar">
+        <div class="mid_text">
+            <h1 class="mid">Nhận email tùy chỉnh với các tính năng khác với Gmail for work</h1>
+        </div>
+        <div class="begin" >BẮT ĐẦU</div>
+    </div>
+
+    <div>
+        <h2>Sử dụng Gmail bạn thích - cho công việc</h2>
+        <h4>Nhập email tùy chỉnh <span>@tencongty.com</span> bao gồm lịch, tài liệu, cuộc họp video và các nội dung khác truy cập từ điện thoại hoặc máy tính bảng</h4>
+    </div>
+
+    <div class= four_image>
+        <div class="image-outer"> 
+            <div class="sub_image">  
+                <img class="in_img" src="C:\Users\hoang\Desktop\HTML\gmail_img\branded.png">
+            </div> 
+            <h5>Nhận Email có thương hiệu</h5> 
+            <p>Cá nhân hóa email của bạn bằng cách nhận địa chỉ email ở miền của bạn. Tạo địa chỉ cho nhóm của bạn như <span>joe@tencongty.com</span></p> 
+        </div>
+        <div class="image-outer"> 
+            <div class="sub_image"> 
+                <img class="in_img" src="C:\Users\hoang\Desktop\HTML\gmail_img\workfromnewhere.png">
+            </div> 
+            <h5>Làm việc từ bất cứ đâu</h5> 
+            <p>Đồng bộ hóa hoặc truy cập email từ điện thoạt di động hoặc máy tính bảng của bạn. Gmail hoạt động trên Android, Iphone, Blackberry và các nền tảng khác.</p> 
+        </div>
+        <div class="image-outer"> 
+            <div class="sub_image"> 
+                <img class="in_img" src="C:\Users\hoang\Desktop\HTML\gmail_img\techsupport.png">
+            </div> 
+            <h5>Nhận hỗ trợ từ 24/7</h5> 
+            <p>Với G Suite, bạn được hỗ trợ 24/7 qua điện thoại và email.</p>
+        </div>
+        <div class="image-outer"> 
+            <div class="sub_image"> 
+                <img class="in_img" src="C:\Users\hoang\Desktop\HTML\gmail_img\hangout.png">
+            </div> 
+            <h5>Không chỉ đơn thuần là Email</h5> 
+            <p>Tổ chức cuộc họp video với tối đa 15 người ngay từ hộp thư đến của bạn.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <ul id="footer_text">
+            <li class="foot"><a href="">Chính sách của chúng tôi</a></li> 
+            <li class="foot"><a href="">Trợ giúp</a></li> 
+            <li class="foot"><a href="">Dành cho công việc</a></li>
+        </ul>
+    </div>
+
+    <div id="footer_low">
+        <ul id="footer_2_text">
+            <li class="foot2"><a href="">Google</a></li> 
+            <li class="foot2"><a href="">Giới thiệt về Google</a></li> 
+            <li class="foot2"><a href="">Bảo mật</a></li>
+            <li class="foot2"><a href="">Điều khoản</a></li>
+        </ul>
+
+        <select id="choose">
+            <option class="language">Tiếng Việt</option>
+            <option class="language">English</option>
+            <option class="language">Espanol</option>
+        </select>
+    </div>
+</body>
+</html>
